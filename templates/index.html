@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hash</title>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
 </head>
+
 <body>
-    <h1 class="classe">Olá mundo! </h1>
-    <input type="file">
-    <button onclick="enviar()">Enviar</button>
+    <div class="CenterBox">
+        <div class="InsideBox1">
+            <!-- TITULO -->
+            <div class="Title">
+                <h1>Validador de Hash</h1>
+            </div>
+
+
+            <!-- ENTRADA DO HASH -->
+            <div class="HashCodeBox">
+                <p>Hash:</p>
+                <input type="text" class="HashCode">
+            </div>
+
+
+
+
+            <!-- FILE PICKER -->
+            <div class="FilePicker">
+                <p>Selecione o arquivo:</p>
+                <input type="file">
+
+            </div>
+        </div>
+        <div class="InsideBox2">
+            <!-- BOTÃO DE CONFIRMAÇÃO -->
+            <div class="ConfirmButton">
+                <button>Confirmar</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
