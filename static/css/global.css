@@ -37,7 +37,7 @@ body {
 
 
 .Title {
-
+    display: flex;
 }
 
 

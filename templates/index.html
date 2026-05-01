@@ -21,7 +21,7 @@
             <!-- ENTRADA DO HASH -->
             <div class="HashCodeBox">
                 <p>Hash:</p>
-                <input type="text" class="HashCode">
+                <input type="text" class="HashCode" id="hashString">
             </div>
 
 
@@ -30,14 +30,14 @@
             <!-- FILE PICKER -->
             <div class="FilePicker">
                 <p>Selecione o arquivo:</p>
-                <input type="file">
+                <input type="file" id="selectedFile">
 
             </div>
         </div>
         <div class="InsideBox2">
             <!-- BOTÃO DE CONFIRMAÇÃO -->
             <div class="ConfirmButton">
-                <button>Confirmar</button>
+                <button onclick="send()">Confirmar</button>
             </div>
         </div>
     </div>

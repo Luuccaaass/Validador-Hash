@@ -1,8 +1,20 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
+import hashlib
 
 app = Flask(__name__)
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+
+@app.route('/api/hash', methods=['POST'])
+def funcaopython():
+    file = request.files['selectedFile']
+    sfile = file.read()
+    m = hashlib.sha256()
+    m.update(sfile)
+    return jsonify({
+        "hash": m.hexdigest()
+    })
+    
 
 @app.route('/')
 

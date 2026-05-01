@@ -11,8 +11,5 @@ except:
 
 
 m = hashlib.sha256()
-n = hashlib.sha3_256()
 m.update(content)
-n.update(content)
 print(f"{m.hexdigest()} \n")
-print(f"{n.hexdigest()} \n")
