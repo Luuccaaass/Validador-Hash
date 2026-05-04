@@ -58,6 +58,30 @@ body {
 }
 
 
+.InfoMessage {
+    display: none;
+    height: 15vh;
+    width: 60vh;
+    border-radius: 20px;
+    margin-top: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfoMessage.valid {
+    display: flex;
+    background-color: green;
+    color:  blue;
+}
+
+.InfoMessage.invalid {
+    display: flex;
+    background-color: red;
+    color:  black;
+}
+
+
+
 .ConfirmButton {
     padding-bottom: 2vh;
 }
